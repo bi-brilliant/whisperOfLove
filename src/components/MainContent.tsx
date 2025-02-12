@@ -83,7 +83,7 @@ const MainContent: React.FC = () => {
             <motion.img
               src="/gif_scrollDown.gif" // Ganti dengan path file GIF Anda
               alt="Animated decoration"
-              className="mt-4 w-24 h-24" // Sesuaikan ukuran sesuai kebutuhan
+              className="mt-4 w-24 h-24 mb-10" // Sesuaikan ukuran sesuai kebutuhan
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
