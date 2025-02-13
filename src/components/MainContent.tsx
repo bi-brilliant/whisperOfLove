@@ -83,7 +83,7 @@ const MainContent: React.FC = () => {
             <motion.img
               src="/gif_scrollDown.gif" // Ganti dengan path file GIF Anda
               alt="Animated decoration"
-              className="mt-4 w-24 h-24 mb-10" // Sesuaikan ukuran sesuai kebutuhan
+              className="mt-4 w-24 h-24 mb-12" // Sesuaikan ukuran sesuai kebutuhan
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -101,7 +101,7 @@ const MainContent: React.FC = () => {
           transition={{ duration: 1 }}
         >
           {/* Konten */}
-          <div className="relative z-10 text-white text-center mb-28 px-10">
+          <div className="relative z-10 text-white text-center px-10 pb-20">
             {/* Quotes */}
             <motion.p
               className="text-base mt-1 font-poppins"
@@ -125,21 +125,21 @@ const MainContent: React.FC = () => {
 
         {/* Section Konten */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start gap-16"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start gap-10 pb-10"
           style={{ backgroundImage: 'url("/obj1.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <motion.div
-            className="mt-16 z-10 text-center px-4"
+            className="mt-14 z-10 text-center px-4"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
             }}
           >
             <motion.h2
-              className="text-2xl tracking-wider font-playfair"
+              className="text-sm tracking-wider font-poppins font-bold"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
