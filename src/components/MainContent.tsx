@@ -94,14 +94,14 @@ const MainContent: React.FC = () => {
 
         {/* Section Konten */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start pb-36"
           style={{ backgroundImage: 'url("/obj3.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           {/* Konten */}
-          <div className="relative z-10 text-white text-center px-10 pb-20">
+          <div className="relative z-10 text-white text-center px-10">
             {/* Quotes */}
             <motion.p
               className="text-base mt-1 font-poppins"
