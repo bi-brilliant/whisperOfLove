@@ -125,7 +125,7 @@ const MainContent: React.FC = () => {
 
         {/* Section Konten */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start gap-10 pb-10"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start gap-10 pb-32"
           style={{ backgroundImage: 'url("/obj1.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -167,7 +167,7 @@ const MainContent: React.FC = () => {
             </motion.p>
           </motion.div>
 
-          <div className="relative z-10 text-white text-center mb-10 px-4 flex row">
+          <div className="relative z-10 text-white text-center px-4 flex row">
             <motion.div
               className="text-sm mt-1 font-poppins text-left"
               variants={{
