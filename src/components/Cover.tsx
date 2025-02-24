@@ -29,6 +29,8 @@ const Cover: React.FC<CoverProps> = ({ onOpenInvitation }) => {
         }}
         style={{
           backgroundImage: 'url("/bg.jpg")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         {/* The Wedding Of */}
