@@ -100,7 +100,7 @@ const MainContent: React.FC = () => {
             <a
               href="https://instagram.com/Luhung_himawan"
               target="_blank"
-              className="mt-5 font-semibold px-6 py-2 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
+              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
             >
               @Luhung_himawan
             </a>
@@ -144,7 +144,7 @@ const MainContent: React.FC = () => {
             <a
               href="https://instagram.com/Luhung_himawan"
               target="_blank"
-              className="mt-5 font-semibold px-6 py-2 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
+              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
             >
               @Luhung_himawan
             </a>
