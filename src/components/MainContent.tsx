@@ -5,6 +5,7 @@ import HeaderSection from "./HeaderSection";
 import QuoteSection from "./QuoteSection";
 import GallerySection from "./GallerySection";
 import BrideSection from "./BrideSection";
+import OurStory from "./OurStorySection";
 
 const MainContent: React.FC = () => {
   return (
@@ -81,6 +82,9 @@ const MainContent: React.FC = () => {
             <GallerySection />
           </div>
         </motion.div>
+
+        {/* Gallery */}
+        <OurStory />
 
         {/* Closer */}
         <motion.div
