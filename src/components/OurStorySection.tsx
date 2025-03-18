@@ -38,11 +38,11 @@ const OurStory: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col items-center py-10 px-4 md:px-16 snap-start">
-      <h2 className="text-4xl font-bold mb-8 font-vibes text-center text-black">
+    <div className="w-full h-screen flex flex-col items-center py-10 px-4 md:px-8 snap-start">
+      <h2 className="text-4xl font-bold mb-8 font-vibes text-center text-white">
         Our Story
       </h2>
-      <div className="w-full max-w-xl space-y-4">
+      <div className="w-full space-y-4">
         {stories.map((story, index) => (
           <motion.div
             key={index}
@@ -53,7 +53,7 @@ const OurStory: React.FC = () => {
           >
             <button
               onClick={() => toggleStory(index)}
-              className="w-full flex justify-between items-center px-6 py-4 text-lg font-semibold text-black"
+              className="w-full flex justify-between items-center px-4 py-1 text-lg font-semibold text-white"
             >
               {story.title}
               {openIndex === index ? (
@@ -67,7 +67,7 @@ const OurStory: React.FC = () => {
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
-                className="px-6 pb-4 text-black"
+                className="px-6 pb-4 text-slate-200 pt-4"
               >
                 {story.content}
               </motion.div>
