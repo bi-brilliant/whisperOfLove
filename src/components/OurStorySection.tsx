@@ -40,7 +40,7 @@ const OurStory: React.FC = () => {
   return (
     <motion.div
       className="relative flex flex-col snap-start items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
-      style={{ backgroundImage: 'url("/bg2.jpg")' }}
+      style={{ backgroundImage: 'url("/bg7.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -62,14 +62,14 @@ const OurStory: React.FC = () => {
         {stories.map((story, index) => (
           <motion.div
             key={index}
-            className="backdrop-blur-md bg-black/30 border border-white/40 rounded-lg shadow-lg"
+            className="backdrop-blur-md bg-white/5 border border-white/40 rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <button
               onClick={() => toggleStory(index)}
-              className="w-full flex justify-between items-center px-4 py-2 text-lg font-semibold text-white bg-black/20 border border-white/40"
+              className="w-full flex justify-between items-center px-4 py-2 text-lg font-semibold text-white bg-white/20 border border-white/40"
             >
               {story.title}
               {openIndex === index ? (
