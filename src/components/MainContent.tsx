@@ -59,7 +59,7 @@ const MainContent: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-lg text-center text-black px-8 mb-10">
+          <p className="text-md text-center text-black px-8 mb-10 font-poppins">
             Dengan memohon Rahmat & Ridho Allah SWT, kami bermaksud mengundang
             Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
           </p>
@@ -87,7 +87,7 @@ const MainContent: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              Andree Luhung Himawan, A.Md.Kes
+              Aldi Halimawan, A.Md.Kes
             </motion.h2>
 
             {/* Deskripsi Orang Tua */}
@@ -98,11 +98,11 @@ const MainContent: React.FC = () => {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com/Luhung_himawan"
+              href="https://instagram.com/bi_brilliant"
               target="_blank"
               className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white hover:text-white"
             >
-              @Luhung_himawan
+              @aldi_halimawan
             </a>
           </div>
 
@@ -131,22 +131,21 @@ const MainContent: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              Andree Luhung Himawan, A.Md.Kes
+              Alina Syakira, S.M.
             </motion.h2>
 
             {/* Deskripsi Orang Tua */}
             <p className="text-sm text-black/80">
-              Putra Pertama dari Bapak Ahmad Rimbo Setiawan dan Ibu
-              Nirkumalasari
+              Putri Kedua dari Bapak Fahmi Afwa dan Ibu Sartika Kasih
             </p>
 
             {/* Instagram */}
             <a
-              href="https://instagram.com/Luhung_himawan"
+              href="https://instagram.com/bi_brilliant"
               target="_blank"
               className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white hover:text-white"
             >
-              @Luhung_himawan
+              @aleena_syakira
             </a>
           </div>
         </motion.div>
@@ -160,7 +159,20 @@ const MainContent: React.FC = () => {
           transition={{ duration: 1 }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/85 to-transparent pointer-events-none"></div>
-          <div className="flex flex-col items-center h-full justify-between px-8">
+          <div className="flex flex-col items-center h-full justify-between px-8 pt-16">
+            <motion.h1
+              className="text-6xl font-bold mt-5 font-vibes z-10 mb-5"
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+              }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Our Moment
+            </motion.h1>
             <GallerySection />
           </div>
         </motion.div>

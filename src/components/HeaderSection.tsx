@@ -34,7 +34,7 @@ const HeaderSection: React.FC = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.5 }}
       >
-        Alin & Aldi
+        Aldi & Alin
       </motion.h1>
 
       <motion.p

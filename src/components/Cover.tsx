@@ -52,7 +52,7 @@ const Cover: React.FC<CoverProps> = ({ onOpenInvitation }) => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
           }}
         >
-          Alin & Aldi
+          Aldi & Alin
         </motion.h1>
 
         {/* Date */}
