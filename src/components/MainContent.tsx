@@ -53,13 +53,13 @@ const MainContent: React.FC = () => {
 
         {/* Bride */}
         <motion.div
-          className="relative flex flex-col items-center justify-center bg-center bg-cover snap-start gap-10 pb-32 pt-32"
-          style={{ backgroundImage: 'url("/bg4.jpg")' }}
+          className="relative flex flex-col items-center justify-center bg-center bg-cover snap-start gap-10 pb-32 pt-24"
+          style={{ backgroundImage: 'url("/bg5.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-lg text-center text-black px-8">
+          <p className="text-lg text-center text-black px-8 mb-10">
             Dengan memohon Rahmat & Ridho Allah SWT, kami bermaksud mengundang
             Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
           </p>
@@ -100,14 +100,14 @@ const MainContent: React.FC = () => {
             <a
               href="https://instagram.com/Luhung_himawan"
               target="_blank"
-              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
+              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white hover:text-white"
             >
               @Luhung_himawan
             </a>
           </div>
 
           {/* Separator */}
-          <div className="w-16 h-1 bg-gold rounded-full my-6"></div>
+          <img src="/icon_heart.png" className="h-40 object-cover" />
 
           {/* Woman */}
           <div className="flex flex-col items-center text-center px-8 py-12 w-4/5 rounded-lg shadow-lg bg-white/20 backdrop-blur-sm border border-white/30 space-y-6">
@@ -144,7 +144,7 @@ const MainContent: React.FC = () => {
             <a
               href="https://instagram.com/Luhung_himawan"
               target="_blank"
-              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/20 hover:bg-black/40 transition duration-300 text-white hover:text-white"
+              className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white hover:text-white"
             >
               @Luhung_himawan
             </a>
