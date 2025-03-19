@@ -69,7 +69,7 @@ const OurStory: React.FC = () => {
           >
             <button
               onClick={() => toggleStory(index)}
-              className="w-full flex justify-between items-center px-4 py-2 text-lg font-semibold text-white bg-white/20 hover:bg-white/40 hover:border-white border border-white/40"
+              className="w-full flex justify-between items-center px-4 py-2 text-lg font-semibold font-poppins text-white bg-white/20 hover:bg-white/40 hover:border-white border border-white/40"
             >
               {story.title}
               {openIndex === index ? (
@@ -85,7 +85,7 @@ const OurStory: React.FC = () => {
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="overflow-hidden px-6 pb-4 text-slate-200 pt-4"
+                  className="overflow-hidden px-6 pb-4 text-slate-200 pt-4 font-poppins"
                 >
                   {story.content}
                 </motion.div>

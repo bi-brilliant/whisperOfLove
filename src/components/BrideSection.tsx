@@ -32,13 +32,13 @@ const BrideSection: React.FC = () => {
         >
           Aldi Halimawan, A.Md.Kes
         </motion.h2>
-        <p className="text-sm text-black/80">
+        <p className="text-sm text-black/80 font-poppins">
           Putra Pertama dari Bapak Ahmad Rimbo Setiawan dan Ibu Nirkumalasari
         </p>
         <a
           href="https://instagram.com/bi_brilliant"
           target="_blank"
-          className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
+          className="mt-5 font-light font-poppins text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
         >
           @aldi_halimawan
         </a>
@@ -63,13 +63,13 @@ const BrideSection: React.FC = () => {
         >
           Alina Syakira, S.M.
         </motion.h2>
-        <p className="text-sm text-black/80">
+        <p className="text-sm text-black/80 font-poppins">
           Putri Kedua dari Bapak Fahmi Afwa dan Ibu Sartika Kasih
         </p>
         <a
           href="https://instagram.com/bi_brilliant"
           target="_blank"
-          className="mt-5 font-light text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
+          className="mt-5 font-light font-poppins text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
         >
           @aleena_syakira
         </a>

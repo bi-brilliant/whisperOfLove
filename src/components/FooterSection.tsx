@@ -11,8 +11,10 @@ const FooterSection: React.FC = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
       <div className="relative z-10 text-white text-center">
-        <h2 className="text-3xl font-bold">See You There</h2>
-        <p className="mt-2 text-lg">We can't wait to celebrate with you!</p>
+        <h2 className="text-3xl font-bold font-playfair">See You There</h2>
+        <p className="mt-2 text-lg font-poppins">
+          We can't wait to celebrate with you!
+        </p>
       </div>
     </motion.div>
   );
