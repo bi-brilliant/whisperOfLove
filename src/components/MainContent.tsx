@@ -7,6 +7,7 @@ import GallerySection from "./GallerySection";
 import BrideSection from "./BrideSection";
 import OurStory from "./OurStorySection";
 import SaveTheDate from "./SaveTheDateSection";
+import Mapping from "./MappingSection";
 
 const MainContent: React.FC = () => {
   return (
@@ -89,6 +90,9 @@ const MainContent: React.FC = () => {
 
         {/* Save The Date */}
         <SaveTheDate />
+
+        {/* Mapping */}
+        <Mapping />
 
         {/* Closer */}
         <motion.div
