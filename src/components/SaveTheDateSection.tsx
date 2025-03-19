@@ -82,7 +82,7 @@ const SaveTheDate: React.FC = () => {
         <h1 className="text-6xl font-bold mb-7 font-vibes">
           Aldi&nbsp;&nbsp;&&nbsp;&nbsp;Alin
         </h1>
-        <p className="text-lg text-white mb-2">
+        <p className="text-lg text-white mb-2 font-poppins">
           {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
           {timeLeft.seconds}s
         </p>
