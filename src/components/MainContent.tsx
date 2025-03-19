@@ -6,6 +6,7 @@ import QuoteSection from "./QuoteSection";
 import GallerySection from "./GallerySection";
 import BrideSection from "./BrideSection";
 import OurStory from "./OurStorySection";
+import SaveTheDate from "./SaveTheDateSection";
 
 const MainContent: React.FC = () => {
   return (
@@ -83,8 +84,11 @@ const MainContent: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Gallery */}
+        {/* Our Story */}
         <OurStory />
+
+        {/* Save The Date */}
+        <SaveTheDate />
 
         {/* Closer */}
         <motion.div
