@@ -5,13 +5,13 @@ import { ClipboardCopy } from "lucide-react";
 const GiftSection: React.FC = () => {
   const accounts = [
     {
-      number: "3990309361",
-      name: "Selvia Puspitasari",
+      number: "399123321",
+      name: "Aldi Halimawan",
       bankLogo: "/icon_bca.png",
     },
     {
-      number: "3990316677",
-      name: "Farij Ramdoni",
+      number: "399321123",
+      name: "Alina Syakira",
       bankLogo: "/icon_mandiri.png",
     },
   ];
