@@ -9,6 +9,7 @@ import OurStory from "./OurStorySection";
 import SaveTheDate from "./SaveTheDateSection";
 import Mapping from "./MappingSection";
 import RSVP from "./RSVPSection";
+import GiftSection from "./GiftSection";
 
 const MainContent: React.FC = () => {
   return (
@@ -97,6 +98,9 @@ const MainContent: React.FC = () => {
 
         {/* RSVP */}
         <RSVP />
+
+        {/* Wedding Gift */}
+        <GiftSection />
 
         {/* Closer */}
         <motion.div
