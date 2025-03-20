@@ -191,7 +191,7 @@ const RSVP: React.FC = () => {
       </motion.div>
 
       {/* List RSVP (Auto Scrollable) */}
-      <div className="mt-6 h-96 overflow-y-auto bg-white  relative z-10 w-full max-w-sm bg-gray-700/30 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-6">
+      <div className="mt-6 h-96 overflow-y-auto relative z-10 w-full max-w-sm bg-gray-700/30 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-6">
         {rsvpList.length === 0 ? (
           <p className="text-center text-white-500">Belum ada RSVP</p>
         ) : (
