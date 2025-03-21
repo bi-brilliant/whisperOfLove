@@ -10,6 +10,7 @@ import SaveTheDate from "./SaveTheDateSection";
 import Mapping from "./MappingSection";
 import RSVP from "./RSVPSection";
 import GiftSection from "./GiftSection";
+import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const MainContent: React.FC = () => {
   return (
@@ -124,6 +125,44 @@ const MainContent: React.FC = () => {
             <h2 className="text-6xl font-bold font-vibes mt-2">Aldi & Alin</h2>
           </div>
         </motion.div>
+
+        {/* Footer */}
+        <footer className="bg-black text-white text-center py-6 pt-10 snap-start">
+          <p className="text-sm font-poppins">Digital Invitation by NABIL</p>
+          {/* Sosial Media Icons */}
+          <div className="flex justify-center gap-2 mt-3">
+            <a
+              href="https://wa.me/123456789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 p-1 rounded-lg"
+            >
+              <FaWhatsapp size={18} className="text-white" />
+            </a>
+            <a
+              href="https://instagram.com/nabil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 p-1 rounded-lg"
+            >
+              <FaInstagram size={18} className="text-white" />
+            </a>
+            <a
+              href="https://tiktok.com/@nabil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 p-1 rounded-lg"
+            >
+              <FaTiktok size={18} className="text-white" />
+            </a>
+          </div>
+          {/* Logo NABIL */}
+          <img
+            src="/logo-nabil.png"
+            alt="NABIL Logo"
+            className="w-24 mx-auto mt-4"
+          />
+        </footer>
       </div>
     </div>
   );
