@@ -104,7 +104,7 @@ const MainContent: React.FC = () => {
 
         {/* Closer */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-start"
+          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-start p-6"
           style={{ backgroundImage: 'url("/image3.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -112,8 +112,16 @@ const MainContent: React.FC = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
           <div className="relative z-10 text-white text-center">
-            <h2 className="text-3xl font-bold">See You There</h2>
-            <p className="mt-2 text-lg">We can't wait to celebrate with you!</p>
+            <p className="mt-2 text-sm font-poppins">
+              Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
+              Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu
+              kepada kedua mempelai.
+            </p>
+
+            <p className="mt-10 text-sm font-poppins">
+              Hormat Kami Yang Mengundang
+            </p>
+            <h2 className="text-6xl font-bold font-vibes mt-2">Aldi & Alin</h2>
           </div>
         </motion.div>
       </div>
