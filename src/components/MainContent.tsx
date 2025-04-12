@@ -23,7 +23,7 @@ const MainContent: React.FC = () => {
         style={{ scrollBehavior: "smooth" }}
       >
         <motion.div
-          className="relative h-screen flex flex-col items-center bg-center bg-cover snap-start"
+          className="relative h-screen flex flex-col items-center bg-center bg-cover snap-startat"
           style={{ backgroundImage: 'url("/obj2.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -46,7 +46,7 @@ const MainContent: React.FC = () => {
 
         {/* Quotes */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start pb-36"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-startat pb-36"
           style={{ backgroundImage: 'url("/obj3.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -63,7 +63,7 @@ const MainContent: React.FC = () => {
 
         {/* Gallery */}
         <motion.div
-          className="relative flex flex-col items-center bg-center bg-cover snap-start"
+          className="relative flex flex-col items-center bg-center bg-cover snap-startat"
           style={{ backgroundImage: 'url("/bg4.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -105,7 +105,7 @@ const MainContent: React.FC = () => {
 
         {/* Closer */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-start p-6"
+          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-startat p-6"
           style={{ backgroundImage: 'url("/image3.jpg")' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -127,7 +127,7 @@ const MainContent: React.FC = () => {
         </motion.div>
 
         {/* Footer */}
-        <footer className="bg-black text-white text-center py-6 pt-10 snap-start">
+        <footer className="bg-black text-white text-center py-6 pt-10 snap-startat">
           <p className="text-sm font-poppins">Digital Invitation by NABIL</p>
           {/* Sosial Media Icons */}
           <div className="flex justify-center gap-2 mt-3">

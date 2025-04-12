@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const BrideSection: React.FC = () => {
   return (
     <motion.div
-      className="relative flex flex-col items-center justify-center bg-center bg-cover snap-start gap-10 pb-32 pt-24"
+      className="relative flex flex-col items-center justify-center bg-center bg-cover snap-startat gap-10 pb-32 pt-24"
       style={{ backgroundImage: 'url("/bg5.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

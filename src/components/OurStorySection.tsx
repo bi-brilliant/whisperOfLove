@@ -39,7 +39,7 @@ const OurStory: React.FC = () => {
 
   return (
     <motion.div
-      className="relative flex flex-col snap-start items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
+      className="relative flex flex-col snap-startat items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
       style={{ backgroundImage: 'url("/bg7.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

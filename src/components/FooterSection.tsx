@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const FooterSection: React.FC = () => {
   return (
     <motion.div
-      className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-start"
+      className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-startat"
       style={{ backgroundImage: 'url("/image3.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

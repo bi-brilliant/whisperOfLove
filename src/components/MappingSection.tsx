@@ -10,9 +10,9 @@ const Mapping: React.FC = () => {
   ];
 
   return (
-    // <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center px-6 md:px-10 py-16 snap-start">
+    // <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center px-6 md:px-10 py-16 snap-startat">
     <motion.div
-      className="relative flex flex-col snap-start items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
+      className="relative flex flex-col snap-startat items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
       style={{ backgroundImage: 'url("/bg10.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

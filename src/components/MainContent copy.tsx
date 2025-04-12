@@ -15,7 +15,7 @@ const MainContent: React.FC = () => {
       >
         {/* Section Pembuka */}
         <motion.div
-          className="relative h-screen flex flex-col items-center bg-center bg-cover snap-start"
+          className="relative h-screen flex flex-col items-center bg-center bg-cover snap-startat"
           style={{
             backgroundImage: 'url("/obj2.jpg")',
             backgroundRepeat: "no-repeat",
@@ -98,7 +98,7 @@ const MainContent: React.FC = () => {
 
         {/* Section Konten */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start pb-36"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-startat pb-36"
           style={{
             backgroundImage: 'url("/obj3.jpg")',
             backgroundRepeat: "no-repeat",
@@ -133,7 +133,7 @@ const MainContent: React.FC = () => {
 
         {/* Section Konten */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-start gap-10 pb-32"
+          className="relative h-screen flex flex-col items-center justify-end bg-center bg-cover snap-startat gap-10 pb-32"
           style={{
             backgroundImage: 'url("/obj1.jpg")',
             backgroundRepeat: "no-repeat",
@@ -252,7 +252,7 @@ const MainContent: React.FC = () => {
 
         {/* Section Pembuka */}
         <motion.div
-          className="relative flex flex-col items-center bg-center bg-cover snap-start"
+          className="relative flex flex-col items-center bg-center bg-cover snap-startat"
           style={{
             backgroundImage: 'url("/bg4.jpg")',
             backgroundRepeat: "no-repeat",
@@ -372,7 +372,7 @@ const MainContent: React.FC = () => {
 
         {/* Section Penutup */}
         <motion.div
-          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-start"
+          className="relative h-screen flex flex-col items-center justify-center bg-center bg-cover snap-startat"
           style={{
             backgroundImage: 'url("/image3.jpg")',
             backgroundRepeat: "no-repeat",

@@ -57,7 +57,7 @@ const SaveTheDate: React.FC = () => {
   };
 
   return (
-    <div className="relative h-screen flex items-end pb-32 justify-center bg-center bg-cover overflow-hidden snap-start">
+    <div className="relative h-screen flex items-end pb-32 justify-center bg-center bg-cover overflow-hidden snap-startat">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentImage}
