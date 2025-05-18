@@ -16,6 +16,8 @@ import FloatingMusicPlayer from "./FloatingMusic";
 const MainContent: React.FC = () => {
   return (
     <>
+      <FloatingMusicPlayer />
+
       <div className="w-full h-screen flex flex-col md:flex-row items-center justify-between">
         <LeftSide images={["/image1.jpg", "/image2.jpg", "/image3.jpg"]} />
 
@@ -177,12 +179,6 @@ const MainContent: React.FC = () => {
           </footer>
         </div>
       </div>
-      <>
-        <FloatingMusicPlayer />
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* isi konten */}
-        </div>
-      </>
     </>
   );
 };
