@@ -10,7 +10,7 @@ import SaveTheDate from "./SaveTheDateSection";
 import Mapping from "./MappingSection";
 import RSVP from "./RSVPSection";
 import GiftSection from "./GiftSection";
-import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaTiktok, FaGlobe } from "react-icons/fa";
 
 const MainContent: React.FC = () => {
   return (
@@ -154,6 +154,14 @@ const MainContent: React.FC = () => {
               className="bg-gray-800 p-1 rounded-lg"
             >
               <FaTiktok size={18} className="text-white" />
+            </a>
+            <a
+              href="https://nabil.solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 p-1 rounded-lg"
+            >
+              <FaGlobe size={18} className="text-white" />
             </a>
           </div>
           {/* Logo NABIL */}
