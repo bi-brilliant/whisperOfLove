@@ -13,7 +13,7 @@ const Mapping: React.FC = () => {
     // <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center px-6 md:px-10 py-16 snap-startat">
     <motion.div
       className="relative flex flex-col snap-startat items-center justify-start min-h-screen bg-cover bg-center px-4 md:px-8 pb-32 pt-24"
-      style={{ backgroundImage: 'url("/bg10.jpg")' }}
+      style={{ backgroundImage: 'url("/bg11.jpg")' }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -21,7 +21,8 @@ const Mapping: React.FC = () => {
       {events.map((event, index) => (
         <motion.div
           key={index}
-          className="relative z-10 w-full max-w-sm bg-white/10 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-6 mb-6"
+          className="relative z-10 w-full max-w-sm  backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-6 mb-6"
+          style={{ backgroundColor: "rgb(60 42 30 / 62%)" }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.2 }}
