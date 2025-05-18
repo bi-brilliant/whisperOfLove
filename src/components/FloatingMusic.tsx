@@ -7,41 +7,52 @@ const FloatingMusicPlayer: React.FC = () => {
   const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const playAudio = () => {
-    if (audioRef.current) {
-      audioRef.current
-        .play()
-        .then(() => {
-          setIsPlaying(true);
-        })
-        .catch((err) => {
-          console.log("Autoplay failed:", err);
-        });
-    }
+  const fadeInAudio = () => {
+    if (!audioRef.current) return;
+    const audio = audioRef.current;
+    audio.volume = 0;
+    audio
+      .play()
+      .then(() => {
+        setIsPlaying(true);
+        let vol = 0;
+        const fadeInterval = setInterval(() => {
+          if (audio.volume < 1) {
+            vol += 0.05;
+            audio.volume = Math.min(vol, 1);
+          } else {
+            clearInterval(fadeInterval);
+          }
+        }, 200); // Naik 0.05 setiap 200ms → ~4 detik total fade
+      })
+      .catch((err) => {
+        console.log("Autoplay failed:", err);
+      });
   };
 
   const togglePlay = () => {
     if (!audioRef.current) return;
+    const audio = audioRef.current;
+
     if (isPlaying) {
-      audioRef.current.pause();
+      audio.pause();
       setIsPlaying(false);
     } else {
-      audioRef.current.play();
-      setIsPlaying(true);
+      audio.volume = 1;
+      audio.play().then(() => setIsPlaying(true));
     }
   };
 
   useEffect(() => {
     const handleInteraction = () => {
       if (!hasInteracted) {
-        playAudio();
+        fadeInAudio();
         setHasInteracted(true);
         window.removeEventListener("click", handleInteraction);
         window.removeEventListener("scroll", handleInteraction);
       }
     };
 
-    // Dengarkan interaksi user
     window.addEventListener("click", handleInteraction);
     window.addEventListener("scroll", handleInteraction);
 
