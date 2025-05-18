@@ -158,7 +158,7 @@ const MainContent: React.FC = () => {
           </div>
           {/* Logo NABIL */}
           <img
-            src="/logo-nabil.png"
+            src="/logo-dark.png"
             alt="NABIL Logo"
             className="w-24 mx-auto mt-4"
           />
