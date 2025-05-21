@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import LeftSide from "./LeftSide";
 import { motion } from "framer-motion";
 import HeaderSection from "./HeaderSection";
@@ -12,8 +12,26 @@ import RSVP from "./RSVPSection";
 import GiftSection from "./GiftSection";
 import { FaWhatsapp, FaInstagram, FaTiktok, FaGlobe } from "react-icons/fa";
 import FloatingMusicPlayer from "./FloatingMusic";
+import { useParams } from "react-router-dom";
 
 const MainContent: React.FC = () => {
+  const { slug } = useParams();
+  const [coupleData, setCoupleData] = useState<any>(null);
+
+  useEffect(() => {
+    fetch(`/data/${slug}.json`)
+      .then((res) => res.json())
+      .then((data) => setCoupleData(data))
+      .catch((err) => {
+        console.error("Data not found:", err);
+        // bisa redirect atau tampilkan pesan error
+      });
+  }, [slug]);
+
+  useEffect(() => {
+    console.log({ coupleData });
+  }, [coupleData]);
+
   return (
     <>
       <FloatingMusicPlayer />
@@ -35,7 +53,13 @@ const MainContent: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
             <div className="flex flex-col items-center h-full justify-between">
-              <HeaderSection />
+              {coupleData && (
+                <HeaderSection
+                  bridegroom={coupleData.bridegroom.name}
+                  bride={coupleData.bride.name}
+                />
+              )}
+
               <motion.img
                 src="/gif_scrollDown.gif"
                 alt="Animated decoration"

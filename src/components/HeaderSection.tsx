@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
-const HeaderSection: React.FC = () => {
+interface HeaderSectionProps {
+  bridegroom: string;
+  bride: string;
+}
+
+const HeaderSection: React.FC<HeaderSectionProps> = ({ bridegroom, bride }) => {
   return (
     <motion.div
       className="mt-16 z-10 text-center"
@@ -34,7 +39,8 @@ const HeaderSection: React.FC = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.5 }}
       >
-        Aldi & Alin
+        {/* Cowo & Cewe */}
+        {bridegroom} & {bride}
       </motion.h1>
 
       <motion.p
