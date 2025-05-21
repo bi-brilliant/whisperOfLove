@@ -32,19 +32,29 @@ const WithCover: React.FC = () => {
       });
   }, [slug]);
 
-  if (!coupleData) return null; // bisa diganti dengan loading spinner
-
   return (
     <div className="w-full h-screen select-none">
       {showCover ? (
         <Cover
           onOpenInvitation={() => setShowCover(false)}
-          bridegroom={coupleData.bridegroom.shortname}
-          bride={coupleData.bride.shortname}
-          date={coupleData.weddingShortDate}
+          bridegroom={
+            coupleData?.bridegroom?.shortname
+              ? coupleData.bridegroom.shortname
+              : "Aldi"
+          }
+          bride={
+            coupleData?.bride?.shortname ? coupleData.bride.shortname : "Alin"
+          }
+          date={
+            coupleData?.weddingShortDate
+              ? coupleData.weddingShortDate
+              : "22 • 22 • 2000"
+          }
         />
-      ) : (
+      ) : coupleData ? (
         <MainContent />
+      ) : (
+        <div className="text-white text-center pt-40">Loading data...</div>
       )}
     </div>
   );

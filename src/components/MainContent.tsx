@@ -53,11 +53,17 @@ const MainContent: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
             <div className="flex flex-col items-center h-full justify-between">
-              {coupleData && (
+              {coupleData ? (
                 <HeaderSection
                   bridegroom={coupleData.bridegroom.shortname}
                   bride={coupleData.bride.shortname}
                   date={coupleData.weddingShortDate}
+                />
+              ) : (
+                <HeaderSection
+                  bridegroom="Aldi"
+                  bride="Alin"
+                  date="22 • 22 • 2000"
                 />
               )}
 
