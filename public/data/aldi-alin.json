@@ -1,0 +1,50 @@
+{
+  "bridegroom": {
+    "name": "Aldi Sahyurrizal S.E",
+    "instagram": "@aldiganteng",
+    "parents": "Putra dari Bapak Samsul & Ibu Rinda"
+  },
+  "bride": {
+    "name": "Alinda Syakira S.E",
+    "instagram": "@alincantik",
+    "parents": "Putri dari Bapak Ridwan & Ibu Siti"
+  },
+  "weddingDate": "10 Desember 2025",
+  "gallery": [
+    "alinaldi1.jpg",
+    "alinaldi2.jpg",
+    "alinaldi3.jpg",
+    "alinaldi4.jpg",
+    "alinaldi5.jpg",
+    "alinaldi6.jpg",
+    "alinaldi7.jpg",
+    "alinaldi8.jpg"
+  ],
+  "ourStory": {
+    "howWeMet": "Awalnya kami berdua tumbuh di lingkungan blablbalba...",
+    "firstDate": "Pertemuan itu membawa rasa penasaran, kami saling blablbalba...",
+    "growingTogether": "Hubungan kami berkembang dengan cara yang kami tidak duga blablbalba...",
+    "engagement": "Kamu tahu sejak awal akan ada tantangan besar blablbalba...",
+    "preparingTheWedding": "Mempersiapkan pernikahan bukan hanya tentang dekorasi blablablba..."
+  },
+  "akad": {
+    "tanggal": "10 Desember 2025",
+    "lokasi": "Citra 8, Kalideres, Jakarta Barat",
+    "maps": "https://maps.google.com/?q=citra+8+kalideres"
+  },
+  "resepsi": {
+    "tanggal": "10 Desember 2025",
+    "lokasi": "Citra 8, Kalideres, Jakarta Barat",
+    "maps": "https://maps.google.com/?q=citra+8+kalideres"
+  },
+  "rekening": {
+    "pria": {
+      "bank": "BCA",
+      "norek": "399123321"
+    },
+    "wanita": {
+      "bank": "Mandiri",
+      "norek": "399321123"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "bridegroom": {
+    "name": "Muhammad Fahri Albar",
+    "instagram": "@fahrii.albar",
+    "parents": "Putra dari Bapak Abdul Malik & Ibu Haniyah"
+  },
+  "bride": {
+    "name": "Tiara Kirana Putri",
+    "instagram": "@tiaraki.p",
+    "parents": "Putri dari Bapak Syamsul Bahri & Ibu Kartika Dewi"
+  },
+  "weddingDate": "22 Januari 2026",
+  "gallery": [
+    "tiarafahri1.jpg",
+    "tiarafahri2.jpg",
+    "tiarafahri3.jpg",
+    "tiarafahri4.jpg",
+    "tiarafahri5.jpg",
+    "tiarafahri6.jpg",
+    "tiarafahri7.jpg",
+    "tiarafahri8.jpg"
+  ],
+  "ourStory": {
+    "howWeMet": "Kami bertemu di acara seminar kampus dan tidak menyangka akan sejauh ini...",
+    "firstDate": "Kencan pertama kami di taman kota membuat segalanya terasa sederhana tapi bermakna...",
+    "growingTogether": "Kami belajar saling memahami di tengah kesibukan karier dan studi...",
+    "engagement": "Kami melangsungkan lamaran dengan khidmat bersama keluarga besar...",
+    "preparingTheWedding": "Semua kami siapkan perlahan tapi pasti, dengan harapan bisa menjadi momen terbaik dalam hidup kami..."
+  },
+  "akad": {
+    "tanggal": "22 Januari 2026",
+    "lokasi": "Gedung Serbaguna Harmoni, Bekasi",
+    "maps": "https://maps.google.com/?q=gedung+serbaguna+harmoni+bekasi"
+  },
+  "resepsi": {
+    "tanggal": "22 Januari 2026",
+    "lokasi": "Gedung Serbaguna Harmoni, Bekasi",
+    "maps": "https://maps.google.com/?q=gedung+serbaguna+harmoni+bekasi"
+  },
+  "rekening": {
+    "pria": {
+      "bank": "BNI",
+      "norek": "0701234567"
+    },
+    "wanita": {
+      "bank": "BRI",
+      "norek": "3216549870"
+    }
+  }
+}
