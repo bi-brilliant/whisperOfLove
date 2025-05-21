@@ -55,8 +55,9 @@ const MainContent: React.FC = () => {
             <div className="flex flex-col items-center h-full justify-between">
               {coupleData && (
                 <HeaderSection
-                  bridegroom={coupleData.bridegroom.name}
-                  bride={coupleData.bride.name}
+                  bridegroom={coupleData.bridegroom.shortname}
+                  bride={coupleData.bride.shortname}
+                  date={coupleData.weddingShortDate}
                 />
               )}
 

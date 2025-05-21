@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 
 interface CoverProps {
   onOpenInvitation: () => void;
+  bridegroom: string;
+  bride: string;
+  date?: string;
 }
 
-const Cover: React.FC<CoverProps> = ({ onOpenInvitation }) => {
+const Cover: React.FC<CoverProps> = ({
+  onOpenInvitation,
+  bridegroom,
+  bride,
+  date,
+}) => {
   return (
     <div className="w-full h-screen flex flex-col md:flex-row items-center justify-between">
       {/* Bagian Kiri: Album Gambar */}
@@ -52,7 +60,7 @@ const Cover: React.FC<CoverProps> = ({ onOpenInvitation }) => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
           }}
         >
-          Aldi & Alin
+          {bridegroom} <br /> &<br /> {bride}
         </motion.h1>
 
         {/* Date */}
@@ -63,7 +71,8 @@ const Cover: React.FC<CoverProps> = ({ onOpenInvitation }) => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
           }}
         >
-          02 • 04 • 2025
+          {/* 02 • 04 • 2025 */}
+          {date}
         </motion.p>
 
         {/* Image */}

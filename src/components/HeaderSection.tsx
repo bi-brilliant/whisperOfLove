@@ -3,9 +3,14 @@ import { motion } from "framer-motion";
 interface HeaderSectionProps {
   bridegroom: string;
   bride: string;
+  date: string;
 }
 
-const HeaderSection: React.FC<HeaderSectionProps> = ({ bridegroom, bride }) => {
+const HeaderSection: React.FC<HeaderSectionProps> = ({
+  bridegroom,
+  bride,
+  date,
+}) => {
   return (
     <motion.div
       className="mt-16 z-10 text-center"
@@ -40,7 +45,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({ bridegroom, bride }) => {
         transition={{ duration: 0.6, delay: 0.5 }}
       >
         {/* Cowo & Cewe */}
-        {bridegroom} & {bride}
+        {bridegroom} <br /> &<br /> {bride}
       </motion.h1>
 
       <motion.p
@@ -54,7 +59,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({ bridegroom, bride }) => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 1 }}
       >
-        02 • 04 • 2025
+        {date}
       </motion.p>
     </motion.div>
   );
