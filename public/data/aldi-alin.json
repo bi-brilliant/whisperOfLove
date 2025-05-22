@@ -23,13 +23,28 @@
     "alinaldi7.jpg",
     "alinaldi8.jpg"
   ],
-  "ourStory": {
-    "howWeMet": "Awalnya kami berdua tumbuh di lingkungan blablbalba...",
-    "firstDate": "Pertemuan itu membawa rasa penasaran, kami saling blablbalba...",
-    "growingTogether": "Hubungan kami berkembang dengan cara yang kami tidak duga blablbalba...",
-    "engagement": "Kamu tahu sejak awal akan ada tantangan besar blablbalba...",
-    "preparingTheWedding": "Mempersiapkan pernikahan bukan hanya tentang dekorasi blablablba..."
-  },
+  "stories": [
+    {
+      "title": "How We Met",
+      "content": "Awalnya kami berdua tumbuh di lingkungan blablbalba..."
+    },
+    {
+      "title": "First Date",
+      "content": "Pertemuan itu membawa rasa penasaran, kami saling blablbalba..."
+    },
+    {
+      "title": "Growing Together",
+      "content": "Hubungan kami berkembang dengan cara yang kami tidak duga blablbalba..."
+    },
+    {
+      "title": "Engagement",
+      "content": "Kamu tahu sejak awal akan ada tantangan besar blablbalba..."
+    },
+    {
+      "title": "Preparing the Wedding",
+      "content": "Mempersiapkan pernikahan bukan hanya tentang dekorasi blablablba..."
+    }
+  ],
   "akad": {
     "tanggal": "10 Desember 2025",
     "lokasi": "Citra 8, Kalideres, Jakarta Barat",

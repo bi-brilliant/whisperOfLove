@@ -128,7 +128,7 @@ const MainContent: React.FC = () => {
           </motion.div>
 
           {/* Our Story */}
-          <OurStory />
+          {coupleData && <OurStory stories={coupleData?.stories} />}
 
           {/* Save The Date */}
           <SaveTheDate />

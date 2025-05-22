@@ -2,35 +2,42 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const stories = [
-  {
-    title: "How We Met",
-    content:
-      "Kami berdua tumbuh di lingkungan yang sama, hanya beberapa rumah berjauhan. Namun, anehnya, kami hampir tidak pernah bertegur sapa. Mungkin karena kesibukan masing-masing atau sekadar rasa canggung yang sulit dijelaskan.\n\nSetelah lulus SMA, kami menjalani hidup di kota yang berbeda. Aku merantau untuk kuliah, begitu juga Alina. Tidak pernah terpikir bahwa takdir akan mempertemukan kami lagi di tempat yang dulu kami anggap terlalu kecil untuk menjadi bagian dari cerita hidup kami.\n\nSuatu hari, setelah bertahun-tahun jauh dari kampung halaman, aku kembali. Dan di situlah, tanpa direncanakan, kami bertemu lagi—di sebuah warung kopi sederhana yang dulu sering aku lewati tanpa benar-benar memperhatikannya.",
-  },
-  {
-    title: "First Date",
-    content:
-      "Pertemuan itu membawa rasa penasaran. Kami mulai saling bertukar cerita tentang kehidupan masing-masing, mengingat masa kecil yang terasa asing, dan tanpa sadar menikmati waktu bersama.\n\nLalu, untuk pertama kalinya, aku mengajak Alina keluar. Bukan dalam suasana yang mewah—hanya duduk di taman kota sambil menikmati sore dan mengenang kisah-kisah masa lalu yang terlewat.\n\nHari itu, aku melihatnya bukan sebagai tetangga, tapi sebagai seseorang yang begitu menarik untuk dikenal lebih dalam. Dan saat itu, aku sadar, mungkin ini bukan hanya sekadar reuni biasa.",
-  },
-  {
-    title: "Growing Together",
-    content:
-      "Hubungan kami berkembang dengan cara yang tidak kami duga. Dari perbincangan ringan menjadi kebiasaan, dari sekadar bertukar pesan menjadi kebutuhan.\n\nKami melewati banyak hal—perdebatan kecil, perbedaan pandangan, hingga momen-momen yang membuat kami semakin yakin bahwa kami ingin terus bersama.\n\nNamun, tidak semua perjalanan berjalan mulus. Kami mulai menghadapi realitas bahwa tidak semua orang merestui hubungan ini.",
-  },
-  {
-    title: "Engagement",
-    content:
-      "Kami tahu sejak awal bahwa akan ada tantangan besar di depan. Perbedaan suku membawa stigma di mata keluarga dan masyarakat sekitar.\n\nAwalnya, restu terasa jauh dari genggaman. Ada keraguan, kekhawatiran, dan pandangan skeptis tentang bagaimana dua budaya ini bisa bersatu. Tapi kami tidak menyerah.\n\nPerlahan, kami membuktikan bahwa cinta tidak bisa diukur hanya dari latar belakang. Kami menunjukkan bahwa kami saling melengkapi, bahwa kami tidak akan menyerah hanya karena perbedaan.\n\nSetelah melewati diskusi panjang, waktu yang cukup lama, dan usaha tanpa henti, hati mereka mulai luluh. Dan akhirnya, hari itu datang—hari di mana mereka mengizinkan kami untuk melangkah ke jenjang berikutnya.\n\nLamaran kami sederhana, tapi penuh makna. Itu bukan hanya tentang dua orang yang ingin bersama, tetapi tentang dua keluarga yang akhirnya menyatu.",
-  },
-  {
-    title: "Preparing the Wedding",
-    content:
-      "Mempersiapkan pernikahan bukan hanya tentang dekorasi atau undangan. Itu tentang menggabungkan dua dunia yang berbeda, menyatukan adat, dan memastikan bahwa setiap orang yang kami cintai merasa menjadi bagian dari perjalanan ini.\n\nKami belajar untuk menghargai budaya satu sama lain, untuk merancang pernikahan yang tidak hanya menjadi simbol cinta kami, tetapi juga simbol persatuan.\n\nDan di tengah semua persiapan yang melelahkan, satu hal yang selalu kami pegang teguh—kami telah melewati begitu banyak rintangan untuk sampai di titik ini, dan kami akan terus berjuang untuk masa depan yang lebih indah bersama.",
-  },
-];
+interface OurStorySectionProps {
+  stories: {
+    title: string;
+    content: string;
+  }[];
+}
 
-const OurStory: React.FC = () => {
+// const stories = [
+//   {
+//     title: "How We Met",
+//     content:
+//       "Kami berdua tumbuh di lingkungan yang sama, hanya beberapa rumah berjauhan. Namun, anehnya, kami hampir tidak pernah bertegur sapa. Mungkin karena kesibukan masing-masing atau sekadar rasa canggung yang sulit dijelaskan.\n\nSetelah lulus SMA, kami menjalani hidup di kota yang berbeda. Aku merantau untuk kuliah, begitu juga Alina. Tidak pernah terpikir bahwa takdir akan mempertemukan kami lagi di tempat yang dulu kami anggap terlalu kecil untuk menjadi bagian dari cerita hidup kami.\n\nSuatu hari, setelah bertahun-tahun jauh dari kampung halaman, aku kembali. Dan di situlah, tanpa direncanakan, kami bertemu lagi—di sebuah warung kopi sederhana yang dulu sering aku lewati tanpa benar-benar memperhatikannya.",
+//   },
+//   {
+//     title: "First Date",
+//     content:
+//       "Pertemuan itu membawa rasa penasaran. Kami mulai saling bertukar cerita tentang kehidupan masing-masing, mengingat masa kecil yang terasa asing, dan tanpa sadar menikmati waktu bersama.\n\nLalu, untuk pertama kalinya, aku mengajak Alina keluar. Bukan dalam suasana yang mewah—hanya duduk di taman kota sambil menikmati sore dan mengenang kisah-kisah masa lalu yang terlewat.\n\nHari itu, aku melihatnya bukan sebagai tetangga, tapi sebagai seseorang yang begitu menarik untuk dikenal lebih dalam. Dan saat itu, aku sadar, mungkin ini bukan hanya sekadar reuni biasa.",
+//   },
+//   {
+//     title: "Growing Together",
+//     content:
+//       "Hubungan kami berkembang dengan cara yang tidak kami duga. Dari perbincangan ringan menjadi kebiasaan, dari sekadar bertukar pesan menjadi kebutuhan.\n\nKami melewati banyak hal—perdebatan kecil, perbedaan pandangan, hingga momen-momen yang membuat kami semakin yakin bahwa kami ingin terus bersama.\n\nNamun, tidak semua perjalanan berjalan mulus. Kami mulai menghadapi realitas bahwa tidak semua orang merestui hubungan ini.",
+//   },
+//   {
+//     title: "Engagement",
+//     content:
+//       "Kami tahu sejak awal bahwa akan ada tantangan besar di depan. Perbedaan suku membawa stigma di mata keluarga dan masyarakat sekitar.\n\nAwalnya, restu terasa jauh dari genggaman. Ada keraguan, kekhawatiran, dan pandangan skeptis tentang bagaimana dua budaya ini bisa bersatu. Tapi kami tidak menyerah.\n\nPerlahan, kami membuktikan bahwa cinta tidak bisa diukur hanya dari latar belakang. Kami menunjukkan bahwa kami saling melengkapi, bahwa kami tidak akan menyerah hanya karena perbedaan.\n\nSetelah melewati diskusi panjang, waktu yang cukup lama, dan usaha tanpa henti, hati mereka mulai luluh. Dan akhirnya, hari itu datang—hari di mana mereka mengizinkan kami untuk melangkah ke jenjang berikutnya.\n\nLamaran kami sederhana, tapi penuh makna. Itu bukan hanya tentang dua orang yang ingin bersama, tetapi tentang dua keluarga yang akhirnya menyatu.",
+//   },
+//   {
+//     title: "Preparing the Wedding",
+//     content:
+//       "Mempersiapkan pernikahan bukan hanya tentang dekorasi atau undangan. Itu tentang menggabungkan dua dunia yang berbeda, menyatukan adat, dan memastikan bahwa setiap orang yang kami cintai merasa menjadi bagian dari perjalanan ini.\n\nKami belajar untuk menghargai budaya satu sama lain, untuk merancang pernikahan yang tidak hanya menjadi simbol cinta kami, tetapi juga simbol persatuan.\n\nDan di tengah semua persiapan yang melelahkan, satu hal yang selalu kami pegang teguh—kami telah melewati begitu banyak rintangan untuk sampai di titik ini, dan kami akan terus berjuang untuk masa depan yang lebih indah bersama.",
+//   },
+// ];
+
+const OurStory: React.FC<OurStorySectionProps> = ({ stories }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleStory = (index: number) => {

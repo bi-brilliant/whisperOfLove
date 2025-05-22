@@ -23,13 +23,28 @@
     "tiarafahri7.jpg",
     "tiarafahri8.jpg"
   ],
-  "ourStory": {
-    "howWeMet": "Kami bertemu di acara seminar kampus dan tidak menyangka akan sejauh ini...",
-    "firstDate": "Kencan pertama kami di taman kota membuat segalanya terasa sederhana tapi bermakna...",
-    "growingTogether": "Kami belajar saling memahami di tengah kesibukan karier dan studi...",
-    "engagement": "Kami melangsungkan lamaran dengan khidmat bersama keluarga besar...",
-    "preparingTheWedding": "Semua kami siapkan perlahan tapi pasti, dengan harapan bisa menjadi momen terbaik dalam hidup kami..."
-  },
+  "stories": [
+    {
+      "title": "How We Met",
+      "content": "Kami bertemu di acara seminar kampus dan tidak menyangka akan sejauh ini..."
+    },
+    {
+      "title": "First Date",
+      "content": "Kencan pertama kami di taman kota membuat segalanya terasa sederhana tapi bermakna..."
+    },
+    {
+      "title": "Growing Together",
+      "content": "Kami belajar saling memahami di tengah kesibukan karier dan studi..."
+    },
+    {
+      "title": "Engagement",
+      "content": "Kami melangsungkan lamaran dengan khidmat bersama keluarga besar..."
+    },
+    {
+      "title": "Preparing the Wedding",
+      "content": "Semua kami siapkan perlahan tapi pasti, dengan harapan bisa menjadi momen terbaik dalam hidup kami..."
+    }
+  ],
   "akad": {
     "tanggal": "22 Januari 2026",
     "lokasi": "Gedung Serbaguna Harmoni, Bekasi",
