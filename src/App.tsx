@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
   useParams,
+  Navigate,
 } from "react-router-dom";
 import MainContent from "./components/MainContent";
 
@@ -12,6 +13,11 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/:slug" element={<WithCover />} />
+        {/* Redirect "/" to default */}
+        <Route path="/" element={<Navigate to="/alin-aldi" />} />
+
+        {/* Dynamic route as slug */}
         <Route path="/:slug" element={<WithCover />} />
       </Routes>
     </Router>
