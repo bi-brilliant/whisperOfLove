@@ -1,7 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const BrideSection: React.FC = () => {
+interface BrideSectionProps {
+  bridegroom: string;
+  bridegroomParents: string;
+  bridegroomInstagram: string;
+  bride: string;
+  brideParents: string;
+  brideInstagram: string;
+}
+
+const BrideSection: React.FC<BrideSectionProps> = ({
+  bridegroom,
+  bridegroomParents,
+  bridegroomInstagram,
+  bride,
+  brideParents,
+  brideInstagram,
+}) => {
   return (
     <motion.div
       className="relative flex flex-col items-center justify-center bg-center bg-cover snap-startat gap-10 pb-32 pt-24"
@@ -30,17 +46,17 @@ const BrideSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Aldi Halimawan, A.Md.Kes
+          {bridegroom}
         </motion.h2>
         <p className="text-sm text-black/80 font-poppins">
-          Putra Pertama dari Bapak Ahmad Rimbo Setiawan dan Ibu Nirkumalasari
+          {bridegroomParents}
         </p>
         <a
-          href="https://instagram.com/bi_brilliant"
+          href={`https://instagram.com/${bridegroomInstagram}`}
           target="_blank"
           className="mt-5 font-light font-poppins text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
         >
-          @aldi_halimawan
+          @{bridegroomInstagram}
         </a>
       </div>
 
@@ -61,17 +77,15 @@ const BrideSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Alina Syakira, S.M.
+          {bride}
         </motion.h2>
-        <p className="text-sm text-black/80 font-poppins">
-          Putri Kedua dari Bapak Fahmi Afwa dan Ibu Sartika Kasih
-        </p>
+        <p className="text-sm text-black/80 font-poppins">{brideParents}</p>
         <a
-          href="https://instagram.com/bi_brilliant"
+          href={`https://instagram.com/${brideInstagram}`}
           target="_blank"
           className="mt-5 font-light font-poppins text-xs px-3 py-1 rounded-lg bg-black/40 hover:bg-black/60 transition duration-300 text-white"
         >
-          @aleena_syakira
+          @{brideInstagram}
         </a>
       </div>
     </motion.div>

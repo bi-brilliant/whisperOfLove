@@ -53,17 +53,11 @@ const MainContent: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
             <div className="flex flex-col items-center h-full justify-between">
-              {coupleData ? (
+              {coupleData && (
                 <HeaderSection
                   bridegroom={coupleData.bridegroom.shortname}
                   bride={coupleData.bride.shortname}
                   date={coupleData.weddingShortDate}
-                />
-              ) : (
-                <HeaderSection
-                  bridegroom="Aldi"
-                  bride="Alin"
-                  date="22 • 22 • 2000"
                 />
               )}
 
@@ -94,7 +88,17 @@ const MainContent: React.FC = () => {
           </motion.div>
 
           {/* Bride */}
-          <BrideSection />
+
+          {coupleData && (
+            <BrideSection
+              bridegroom={coupleData.bridegroom.name}
+              bridegroomParents={coupleData.bridegroom.parents}
+              bridegroomInstagram={coupleData.bridegroom.instagram}
+              bride={coupleData.bride.name}
+              brideParents={coupleData.bride.parents}
+              brideInstagram={coupleData.bride.instagram}
+            />
+          )}
 
           {/* Gallery */}
           <motion.div
